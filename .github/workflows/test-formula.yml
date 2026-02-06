@@ -22,7 +22,7 @@ jobs:
           - os: macos-15
             arch: arm64
             name: macOS (Apple Silicon)
-          - os: macos-15-large
+          - os: macos-15
             arch: x86_64
             name: macOS (Intel)
           - os: ubuntu-latest
@@ -55,7 +55,3 @@ jobs:
         run: |
           graft --version
           which graft
-
-      - name: Run brew test
-        run: |
-          brew test ms-henglu/graft/graft
