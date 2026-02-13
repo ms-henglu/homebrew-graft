@@ -4,26 +4,26 @@
 class Graft < Formula
   desc "Graft is a CLI tool that brings the Overlay Pattern (similar to Kustomize) to Terraform"
   homepage "https://github.com/ms-henglu/graft"
-  version "0.1.0"
+  version "0.2.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ms-henglu/graft/releases/download/v#{version}/graft_#{version}_Darwin_arm64.zip"
-      sha256 "0338737329996be073faa0c70d69371c971d73a7ac1dd40da88c5f386ef080b3"
+      sha256 "50e3dde121a139ac15e7f5e8f1743c36c70d7c1cbce4f90a1d6c10f18bce5407"
     else
       url "https://github.com/ms-henglu/graft/releases/download/v#{version}/graft_#{version}_Darwin_x86_64.zip"
-      sha256 "17664fe4420a3c911d83b6ec12368bf12f6aabef682342a8bf2de8c98b01e5dc"
+      sha256 "b1e483eef4e1afd6265fa2e667e02f631a23caa0c13110627ef6324e9752bcb8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ms-henglu/graft/releases/download/v#{version}/graft_#{version}_Linux_arm64.zip"
-      sha256 "a12003e8a2bc3c54862d9d225668990dd3a7d78f7a5af6ab9d11d03b36018f7c"
+      sha256 "7a7e0f76d7f4e4a77029313373398a3efaf43e642c8e616d9468899cd1f07e77"
     else
       url "https://github.com/ms-henglu/graft/releases/download/v#{version}/graft_#{version}_Linux_x86_64.zip"
-      sha256 "8801b8061a652469ff97af149e4e6966b926a4cd2099b03ed7e759a61f6ae728"
+      sha256 "2727b18ca76f93d86e6f5ca77c2c0514a8df975a844fb3818f3678544bd0c150"
     end
   end
 
